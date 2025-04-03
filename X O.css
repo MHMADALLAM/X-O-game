@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #daef95;
+  }
+  h1{
+      height: 40px;
+      width: 25%;
+      margin: 40px auto;
+      padding: 10px;
+      background-color: #527eae;
+
+  }
+  
+  #game {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 10px;
+    justify-content: center;
+    margin: 40px auto;
+  }
+  
+  .cell {
+    width: 100px;
+    height: 110px;
+    font-size: 2em;
+    background-color: #fff;
+    border: 2px solid #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  .cell:hover {
+    background-color: #e0e0e0;
+  }
+  #status {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -20px;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+  }
+  button{
+    border-radius: 15px;
+    padding: 10px;
+    border: 2px solid transparent;
+    border-color:rgb(164, 160, 160,.4) ;
+  }
+  button:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+    color: rgb(167, 45, 45);
+  }
