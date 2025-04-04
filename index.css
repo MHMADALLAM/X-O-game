@@ -11,13 +11,13 @@ body {
 }
 
 .container {
-  background-color: rgba(255, 255, 255, 0.4);
+  background-color: rgba(172, 211, 225, 0.799);
   padding: 20px;
   border-radius: 15px;
   width: fit-content;
   margin: 50px auto;
-  background-color: #527eae;
 }
+
 
 h1 {
   height: 40px;
