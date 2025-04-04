@@ -8,6 +8,7 @@ body {
   background-attachment: fixed;
   margin: 0;
   padding: 0;
+  padding-right:0;
 }
 
 .container {
