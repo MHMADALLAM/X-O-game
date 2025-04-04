@@ -1,102 +1,97 @@
 body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    background-color: black;
-    background-image: url(allam3.jpeg);
-    background-size: contain;
-    background-repeat: no-repeat ;
-    background-position: left;
-    padding: 16px;
-    margin: 0;
-    background-attachment: fixed;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-image: url('allam1.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+}
 
-  }
-  .container {
-    background-color: rgba(255, 255, 255, 0.4);
-    padding: 20px;
-    border-radius: 15px;
-    width: fit-content;
-    margin: auto 50px auto 900px;
-  }
-  h1{
-      height: 40px;
-      width: 25%;
-      margin: 40px auto;
-      padding: 1px;
-      background-color: #527eae;
+.container {
+  background-color: rgba(255, 255, 255, 0.4);
+  padding: 20px;
+  border-radius: 15px;
+  width: fit-content;
+  margin: 50px auto;
+  background-color: #527eae;
+}
 
-  }
-  
-  #game {
-    display: grid;
-    grid-template-columns: repeat(3, 100px);
-    grid-gap: 10px;
-    justify-content: right;
-    margin: 60px ;
-  }
-  
-  .cell {
-    width: 100px;
-    height: 110px;
-    font-size: 2em;
-    background-color: #fff;
-    border: 2px solid #333;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-  }
-  .cell:hover {
-    background-color: #e0e0e0;
-  }
-  #status {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: -20px;
-    margin-bottom: 20px;
-    font-size: 1.5em;
-  }
-  button{
-    border-radius: 15px;
-    padding: 10px;
-    border: 2px solid transparent;
-    border-color:rgb(164, 160, 160,.4) ;
-  }
-  button:hover{
-    transform: scale(1.2);
-    cursor: pointer;
-    color: rgb(167, 45, 45);
-  }
+h1 {
+  height: 40px;
+  margin-bottom: 20px;
+}
 
-@media (max-width: 410px) {
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  gap: 10px;
+  justify-content: center;
+  margin: 40px auto;
+}
+
+.cell {
+  width: 100px;
+  height: 100px;
+  font-size: 2em;
+  background-color: #fff;
+  border: 2px solid #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.cell:hover {
+  background-color: #e0e0e0;
+}
+
+#status {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 10px;
+  border-radius: 15px;
+  cursor: pointer;
+  border: 2px solid transparent;
+  background-color: rgba(164, 160, 160, 0.4);
+}
+
+button:hover {
+  transform: scale(1.1);
+  color: rgb(167, 45, 45);
+}
+
+/* Responsive design for iPhone 15 and small screens */
+@media (max-width: 430px) {
   body {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 0;
-    padding: 0;
   }
 
   .container {
     width: 100%;
     padding: 10px;
+    margin: 10px;
     box-sizing: border-box;
   }
 
   .grid {
     width: 100%;
     max-width: 360px;
-    margin: auto;
-    display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 5px;
   }
 
-  .grid div {
-    height: 100px;
-    font-size: 2rem;
+  .grid .cell {
+    height: 90px;
+    font-size: 1.5rem;
   }
 
   h1 {
@@ -107,5 +102,3 @@ body {
     font-size: 1rem;
   }
 }
-    color: rgb(167, 45, 45);
-  }
